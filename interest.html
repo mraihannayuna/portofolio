@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayuna</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    .main-intr {
+        color: #37FF3F;
+        scale: 1.6;
+        filter: opacity(1);
+    }
+
+    .exp-img {
+        width: 95%;
+        height: auto;
+        margin: 25px 0;
+        border: 4px solid black;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <sustainer class="sustain">
+
+        <!--? photo -->
+
+        <div class="sustain-items">
+            <img class="photocard" src="public/gwej bet.png" alt="A portrait photo of Nayuna">
+        </div>
+
+        <!--! End photo -->
+
+        <!--? Main -->
+
+        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+            class="sustain-items">
+
+            <div class="section">
+                <main class="container">
+                    <section class="title">
+                        <h1>Interests</h1>
+                    </section>
+
+                    <h3>Professional Development</h3>
+                    <h5>
+                        Web Application Development: Passionate about building scalable web applications using Laravel,
+                        focusing on features like Eloquent ORM and Blade templating.
+                        <br><br>
+                        API Development: Enjoy designing and implementing RESTful APIs to support web and mobile
+                        applications.
+                    </h5>
+                    <h3>Continuous Learning</h3>
+                    <h5>
+                        Online Courses: Regularly complete courses on platforms like Dicoding and Udemy to enhance my
+                        skills in PHP and Laravel.
+                    </h5>
+                    <h3>Personal Projects</h3>
+                    <h5>
+                        Open Source Contributions: Contribute to open source Laravel projects to improve coding skills
+                        and collaborate with the community.
+                        <br><br>
+                        Project Development: Build personal projects such as task management tools and blog platforms to
+                        apply and expand my learning.
+                    </h5>
+                    <h3>Additional Interests</h3>
+                    <h5>
+                        Language Learning: Currently learning English & Japanese, which enhances cognitive skills and
+                        patience.
+                    </h5>
+                </main>
+            </div>
+
+
+            <div class="section">
+                <main class="container">
+                    <section class="title">
+                        <h1>Projects</h1>
+                    </section>
+
+                    <div>
+                        <h3>Back-end</h4>
+
+                            <img class="exp-img" src="public/api.png" alt="Back-end 1">
+
+                            <img class="exp-img" src="public/e-commerce back-end.png" alt="Back-end 2">
+
+                            <h3>Front-end</h4>
+
+                                <img class="exp-img" src="public/krigmarin.png" alt="Front-end 1">
+
+                                <img class="exp-img" src="public/porto lama.png" alt="Front-end 2">
+
+                    </div>
+
+                </main>
+            </div>
+
+        </div>
+
+        <!--! End Main -->
+
+        <!--? Sidebar -->
+        <div class="sustain-items">
+            <sidebar class="side-bg">
+
+                <div class="buttons">
+                    <a class="prf" href="index.html">Profile</a>
+                    <a class="exp" href="exp.html">Experience</a>
+                    <a class="main-intr" href="#">Interest</a>
+                </div>
+
+            </sidebar>
+        </div>
+
+        <!--? mobile nav  -->
+
+        <aside class="side-bg-2">
+
+            <div class="buttons-2">
+                <a class="prf" href="index.html">Profile</a>
+                <a class="exp" href="exp.html">Experience</a>
+                <a class="main-intr" href="#">Interest</a>
+            </div>
+
+        </aside>
+
+
+        <!--! End Sidebar -->
+
+    </sustainer>
+
+    <script src="main.js"></script>
+    <!--* AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script>AOS.init();</script>
+
+</body>
+
+</html>
