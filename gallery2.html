@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayuna</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="public/logo porto.png" type="image/x-icon">
+</head>
+
+<style>
+    .side-bg {
+        position: fixed;
+        bottom: 0;
+        right: 10%;
+        width: 30px;
+        height: 100vh;
+        background: #009D06;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        background-color: #37FF3F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .all-pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        border: 2px solid black;
+    }
+
+    .btn-back a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-back a:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+
+    <sustainer class="sustain">
+
+        <!--? photo -->
+
+        <div class="sustain-items">
+            <img class="photocard" src="public/gwej bet.png" alt="A portrait photo of Nayuna">
+        </div>
+
+        <!--! End photo -->
+
+        <!--? Main -->
+
+        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
+            class="sustain-items">
+            <div data-aos="flip-right" data-aos-duration="2200">
+                <div class="section">
+                    <main class="container">
+                        <h1>Laravel E-Commerce</h1>
+
+                        <section class="all-pic">
+                            <img class="pic" src="public/api.png" alt="e-commerce picture">
+                            <img class="pic" src="public/api2.png" alt="another e-commerce picture">
+                        </section>
+                        <h3>This is an API project that I made with Laravel 10, This project is like a blog where you
+                            can post a blog and then you can leave a review of it too, This is what I used when
+                            developing this project :</h3>
+                        <h5>
+                            1. Laravel 10
+                            <br>
+                            2. Postman
+                            <br>
+                            3. MySQL
+                            <br>
+                            4. Github
+                            <br>
+                            5. XAMPP
+                            <br>
+                            6. VsCode
+                        </h5>
+                        <h3>*The project was successful</h3>
+                        <div class="btn-back">
+                            <a href="exp.html">Go Back</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!--! End Main -->
+
+        <!--? Sidebar -->
+        <div class="sustain-items">
+            <sidebar data-aos-duration="1500" data-aos="flip-down" class="side-bg">
+
+                <div class="buttons">
+                    <a class="prf" href="index.html">Profile</a>
+                    <a class="exp" href="exp.html">Experience</a>
+                    <a class="intr" href="#">More</a>
+                </div>
+            </sidebar>
+        </div>
+
+        <!--? mobile nav  -->
+
+        <aside class="side-bg-2">
+
+            <div class="buttons-2">
+                <a class="prf" href="index.html">Profile</a>
+                <a class="exp" href="exp.html">Experience</a>
+                <a class="intr" href="#">Interests</a>
+            </div>
+
+        </aside>
+
+
+        <!--! End Sidebar -->
+
+    </sustainer>
+
+    <script src="main.js"></script>
+    <!--* AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script>AOS.init();</script>
+
+</body>
+
+</html>

@@ -10,9 +10,33 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="public/logo porto.png" type="image/x-icon">
 </head>
 
 <style>
+    .side-bg {
+        position: fixed;
+        bottom: 0;
+        right: 10%;
+        width: 30px;
+        height: 100vh;
+        background: #009D06;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        background-color: #37FF3F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
     .main-intr {
         color: #37FF3F;
         scale: 1.6;
@@ -42,84 +66,61 @@
 
         <!--? Main -->
 
-        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
             class="sustain-items">
-
-            <div class="section">
-                <main class="container">
-                    <section class="title">
-                        <h1>Interests</h1>
-                    </section>
-
-                    <h3>Professional Development</h3>
-                    <h5>
-                        Web Application Development: Passionate about building scalable web applications using Laravel,
-                        focusing on features like Eloquent ORM and Blade templating.
-                        <br><br>
-                        API Development: Enjoy designing and implementing RESTful APIs to support web and mobile
-                        applications.
-                    </h5>
-                    <h3>Continuous Learning</h3>
-                    <h5>
-                        Online Courses: Regularly complete courses on platforms like Dicoding and Udemy to enhance my
-                        skills in PHP and Laravel.
-                    </h5>
-                    <h3>Personal Projects</h3>
-                    <h5>
-                        Open Source Contributions: Contribute to open source Laravel projects to improve coding skills
-                        and collaborate with the community.
-                        <br><br>
-                        Project Development: Build personal projects such as task management tools and blog platforms to
-                        apply and expand my learning.
-                    </h5>
-                    <h3>Additional Interests</h3>
-                    <h5>
-                        Language Learning: Currently learning English & Japanese, which enhances cognitive skills and
-                        patience.
-                    </h5>
-                </main>
+            <div data-aos="flip-right" data-aos-duration="2200">
+                <div class="section">
+                    <main class="container">
+                        <section class="title">
+                            <h1>Interests</h1>
+                        </section>
+                        <div data-aos="fade-left" data-aos-duration="1500">
+                            <h3>Professional Development</h3>
+                            <h5>
+                                Web Application Development: Passionate about building scalable web applications using
+                                Laravel,
+                                focusing on features like Eloquent ORM and Blade templating.
+                                <br><br>
+                                API Development: Enjoy designing and implementing RESTful APIs to support web and mobile
+                                applications.
+                            </h5>
+                            <h3>Continuous Learning</h3>
+                            <h5>
+                                Online Courses: Regularly complete courses on platforms like Dicoding and Udemy to
+                                enhance
+                                my
+                                skills in PHP and Laravel.
+                            </h5>
+                            <h3>Personal Projects</h3>
+                            <h5>
+                                Project Development: Build personal projects such as task management tools and blog
+                                platforms to
+                                apply and expand my learning.
+                            </h5>
+                            <h3>Additional Interests</h3>
+                            <h5>
+                                Language Learning: Currently learning English & Japanese, which enhances cognitive
+                                skills
+                                and
+                                patience.
+                            </h5>
+                        </div>
+                    </main>
+                </div>
             </div>
-
-
-            <div class="section">
-                <main class="container">
-                    <section class="title">
-                        <h1>Projects</h1>
-                    </section>
-
-                    <div>
-                        <h3>Back-end</h4>
-
-                            <img class="exp-img" src="public/api.png" alt="Back-end 1">
-
-                            <img class="exp-img" src="public/e-commerce backend.png" alt="Back-end 2">
-
-                            <h3>Front-end</h4>
-
-                                <img class="exp-img" src="public/krigmarin.png" alt="Front-end 1">
-
-                                <img class="exp-img" src="public/porto lama.png" alt="Front-end 2">
-
-                    </div>
-
-                </main>
-            </div>
-
         </div>
 
         <!--! End Main -->
 
         <!--? Sidebar -->
         <div class="sustain-items">
-            <sidebar class="side-bg">
+            <sidebar data-aos-duration="1500" data-aos="flip-down" class="side-bg">
 
                 <div class="buttons">
                     <a class="prf" href="index.html">Profile</a>
                     <a class="exp" href="exp.html">Experience</a>
-                    <a class="main-intr" href="#">Interest</a>
-                </div>
-
-            </sidebar>
+                    <a class="main-intr" href="#">Interests</a>
+                </div </sidebar>
         </div>
 
         <!--? mobile nav  -->
@@ -129,7 +130,7 @@
             <div class="buttons-2">
                 <a class="prf" href="index.html">Profile</a>
                 <a class="exp" href="exp.html">Experience</a>
-                <a class="main-intr" href="#">Interest</a>
+                <a class="main-intr" href="#">Interests</a>
             </div>
 
         </aside>

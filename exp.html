@@ -10,7 +10,30 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="public/logo porto.png" type="image/x-icon">
     <style>
+        .side-bg {
+            position: fixed;
+            bottom: 0;
+            right: 10%;
+            width: 30px;
+            height: 100vh;
+            background: #9D9700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            background-color: #FFF627;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            height: 50px;
+            font-size: 20px;
+        }
+
         .main-exp {
             color: #FFF627;
             scale: 1.6;
@@ -20,7 +43,7 @@
         .skills {
             display: flex;
             align-items: center;
-            margin-top: 10px;
+            margin: 40px 0;
             justify-content: center;
         }
 
@@ -70,6 +93,36 @@
             border: 4px solid black;
             border-radius: 10px;
         }
+
+        .language {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .language-mobile {
+            display: none;
+        }
+
+        .project-gal {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .project-gal:hover{
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .language-mobile {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .language {
+                display: none;
+            }
+        }
     </style>
 
 </head>
@@ -88,94 +141,128 @@
 
         <!--? Main -->
 
-        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
             class="sustain-items">
+            <div data-aos="flip-right" data-aos-duration="2200">
+                <div class="section">
+                    <main class="container">
+                        <section class="title">
+                            <h1>Experience</h1>
+                        </section>
 
-            <div class="section">
-                <main class="container">
-                    <section class="title">
-                        <h1>Projects</h1>
-                    </section>
 
-                    <div>
-                        <h3>Back-end</h4>
-                            <p>
-                                ini beberapa cuplikan codingan back-end yang saya kerjakan
-                            </p>
+                        <!--TODO  IMPROVE THIS SECTION -->
+                        <div>
 
-                            <a href="interest.html"><img class="exp-img" src="public/api.png" alt="Back-end 1"></a>
+                            <h3>E-Commerce Website</h3>
 
-                            <a href="interest.html"><img class="exp-img" src="public/e-commerce backend.png" alt="Back-end 2"></a>
+                            <div data-aos="fade-left" data-aos-duration="1500" class="btn-cv">
+                                <a class="project-gal" href="gallery1.html">> Project Gallery</a>
+                            </div>
 
-                            <h3>Front-end</h4>
-                                <p>
-                                    ini beberapa cuplikan codingan front-end yang saya kerjakan
-                                </p>
+                            <h3>Laravel API</h3>
 
-                                <a href="interest.html"><img class="exp-img" src="public/krigmarin.png" alt="Front-end 1"></a>
+                            <div data-aos="fade-left" data-aos-duration="1500" class="btn-cv">
+                                <a class="project-gal" href="gallery2.html">> Project Gallery</a>
+                            </div>
 
-                                <a href="interest.html"><img class="exp-img" src="public/porto lama.png" alt="Front-end 2"></a>
+                        </div>
 
-                    </div>
+                    </main>
+                </div>
 
-                    <h6 style="font-weight: 600;"><i>see bigger picture in interest</i></h6>
+                <div class="section">
+                    <main class="container">
 
-                </main>
+                        <section class="title">
+                            <h1>Language</h1>
+                        </section>
+
+                        <section data-aos="fade-left" data-aos-duration="1500" class="language">
+                            <h4>Indonesian - Native</h4>
+                            <h4>English - Intermediate</h4>
+                            <h4>Japanese - Beginner</h4>
+                        </section>
+
+                        <section data-aos="fade-left" data-aos-duration="1500" class="language-mobile">
+                            <h6>Indonesian - Native</h6>
+                            <h6>English - Intermediate</h6>
+                            <h6>Japanese - Beginner</h6>
+                        </section>
+
+                    </main>
+                </div>
+
+
+                <div class="section">
+                    <main class="container">
+                        <section class="title">
+                            <h1>Certificates</h1>
+                        </section>
+
+                        <section data-aos="fade-left" data-aos-duration="1500" class="all-sertif">
+                            <a href="https://www.dicoding.com/certificates/1OP856NKQPQK"><img class="sertif"
+                                    src="public/sertif front end.png" alt="Front-end Certificates"></a>
+                            <a href="https://www.dicoding.com/certificates/1OP85Y111PQK"><img class="sertif"
+                                    src="public/sertif js.png" alt="Javascript Certificates"></a>
+                            <a href="https://www.dicoding.com/certificates/1OP85L4N1PQK"><img class="sertif"
+                                    src="public/sertif WEB.png" alt="WEB programming Certificates"></a>
+                        </section>
+
+                        <h5>Click to see the certificate</h5>
+
+                    </main>
+                </div>
+
+                <div class="section">
+                    <main class="container">
+
+                        <section class="title">
+                            <h1>Skills</h1>
+                        </section>
+
+                        <section class="skills">
+                            <div data-aos="fade-right" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-html5"></i>advanced</div>
+                            <div data-aos="fade-down" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-css3-alt"></i>advanced</div>
+                            <div data-aos="fade-down" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-bootstrap"></i>advanced</div>
+                            <div data-aos="fade-left" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-laravel"></i>advanced</div>
+                        </section>
+                        <section class="skills">
+                            <div data-aos="fade-right" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-figma"></i>intermediate</div>
+                            <div data-aos="zoom-out" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-android"></i>intermediate</div>
+                            <div data-aos="zoom-out" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-js"></i>intermediate</div>
+                            <div data-aos="fade-left" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-php"></i>intermediate</div>
+                        </section>
+                        <section class="skills">
+                            <div data-aos="fade-right" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-brands fa-git-alt"></i>intermediate</div>
+                            <div data-aos="fade-left" data-aos-duration="1500" class="skills-logo"><i
+                                    class="fa-solid fa-database"></i>intermediate</div>
+                        </section>
+
+                    </main>
+                </div>
             </div>
-
-            <div class="section">
-                <main class="container">
-
-                    <section class="title">
-                        <h1>Skills</h1>
-                    </section>
-
-                    <section class="skills">
-                        <div class="skills-logo"><i class="fa-brands fa-html5"></i>Proficient</div>
-                        <div class="skills-logo"><i class="fa-brands fa-css3-alt"></i>Competent</div>
-                        <div class="skills-logo"><i class="fa-brands fa-js"></i>Novice</div>
-                        <div class="skills-logo"><i class="fa-brands fa-php"></i>Intermediate</div>
-                    </section>
-                    <section class="skills">
-                        <div class="skills-logo"><i class="fa-brands fa-figma"></i>Intermediate</div>
-                        <div class="skills-logo"><i class="fa-brands fa-android"></i>Novice</div>
-                        <div class="skills-logo"><i class="fa-brands fa-bootstrap"></i>Competent</div>
-                        <div class="skills-logo"><i class="fa-brands fa-laravel"></i>Competent</div>
-                    </section>
-
-                </main>
-            </div>
-
-            <div class="section">
-                <main class="container">
-                    <section class="title">
-                        <h1>Certificates</h1>
-                    </section>
-
-                    <section class="all-sertif">
-                        <a href="https://www.dicoding.com/certificates/1OP856NKQPQK"><img class="sertif"
-                                src="public/sertif front end.png" alt="Front-end Certificates"></a>
-                        <a href="https://www.dicoding.com/certificates/1OP85Y111PQK"><img class="sertif"
-                                src="public/sertif js.png" alt="Javascript Certificates"></a>
-                        <a href="https://www.dicoding.com/certificates/1OP85L4N1PQK"><img class="sertif"
-                                src="public/sertif WEB.png" alt="WEB programming Certificates"></a>
-                    </section>
-
-                </main>
-            </div>
-
         </div>
 
         <!--! End Main -->
 
         <!--? Sidebar -->
         <div class="sustain-items">
-            <sidebar class="side-bg">
+            <sidebar data-aos-duration="1500" data-aos="flip-down" class="side-bg">
 
                 <div class="buttons">
                     <a class="prf" href="index.html">Profile</a>
                     <a class="main-exp" href="#">Experience</a>
-                    <a class="intr" href="interest.html">Interest</a>
+                    <a class="intr" href="interest.html">More!!!</a>
                 </div>
 
             </sidebar>

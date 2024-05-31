@@ -7,18 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.side-bg {
-  position: fixed;
-  bottom: 0;
-  right: 10%;
-  width: 30px;
-  height: 100vh;
-  background: #116c9f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .buttons {
   position: absolute;
   display: flex;
@@ -67,6 +55,46 @@ body {
   color: #37ff3f;
   transform: scale(1.6);
   filter: opacity(1);
+  animation: interest 1s infinite ease-in-out;
+  transition: 100ms ease-in-out;
+}
+
+@keyframes interest {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-15px);
+  }
+  40% {
+    transform: translateX(15px);
+    color: #27e48c;
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  70% {
+    transform: translateX(-15px);
+  }
+  80% {
+    transform: translateX(15px);
+    color: #a4ea2c;
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .sustain {
@@ -81,9 +109,15 @@ body {
   left: 50px;
 }
 
+.photocard:hover {
+  transform: scale(1.5);
+  top: 200px;
+}
+
 .section {
   height: auto;
   display: flex;
+  margin: 25px 0;
   justify-content: center;
 }
 
@@ -94,16 +128,6 @@ body {
   border-radius: 20px;
   width: 1000px;
   margin: 30px;
-}
-
-.title {
-  background-color: #5ac4ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  height: 50px;
-  font-size: 20px;
 }
 
 .side-bg-2 {
@@ -125,12 +149,32 @@ body {
     grid-template-columns: 30% 70%;
   }
 
+  .photocard:hover {
+    transform: scale(1.5);
+    top: 400px;
+  }
+
+  .intr:hover {
+    color: #37ff3f;
+    transform: scale(1.6);
+    filter: opacity(1);
+  }
+
+  @keyframes title {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .sustain-items {
     font-size: 20px;
     padding: 20px;
   }
 
-  .side-bg {
+  .sustain-items sidebar {
     display: none;
   }
 
@@ -189,6 +233,11 @@ body {
 @media only screen and (max-width: 750px) {
   .container {
     border: none;
+  }
+
+  .photocard:hover {
+    transform: none;
+    top: 100px;
   }
 
   .sustain {

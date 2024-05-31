@@ -10,9 +10,32 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="public/logo porto.png" type="image/x-icon">
 </head>
 
 <style>
+    .side-bg {
+        position: fixed;
+        bottom: 0;
+        right: 10%;
+        width: 30px;
+        height: 100vh;
+        background: #116c9f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        background-color: #5ac4ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        height: 50px;
+        font-size: 20px;
+    }
+
     .main-prf {
         color: #5AC4FF;
         scale: 1.6;
@@ -47,6 +70,7 @@
 
     .introduce {
         padding: 20px;
+        font-size: 14px;
     }
 
     .span-title {
@@ -58,6 +82,27 @@
     .logo {
         color: black;
         text-decoration: none;
+    }
+
+    .btn-cv {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .btn-cv a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-cv a:hover {
+        background-color: #0056b3;
+        transform: scale(1.2);
     }
 </style>
 
@@ -75,10 +120,10 @@
 
         <!--? Main -->
 
-        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+        <div id="sustain-items-id" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
             class="sustain-items">
 
-            <div id="section1" class="section">
+            <div data-aos="flip-right" data-aos-duration="2200" id="section1" class="section">
                 <main class="container">
 
                     <!--* Hello World -->
@@ -88,21 +133,22 @@
 
                     <section class="introduce">
 
-                        <div>
-                            <span class="span-title">Who am i?</span>
+                        <div data-aos="fade-left" data-aos-duration="1500">
+                            <span class="span-title" data-aos="zoom-out" data-aos-duration="3000">Who am i?</span>
                             <br>
                             <i>Hey there, I go by the name <b style="font-style: normal;">Nayuna</b>, but you can also
                                 call me <b>M.Raihan Nayuna</b>.</i>
                             <br>
-                            <span class="span-title">Hit me up!</span>
+                            <span class="span-title" data-aos="zoom-out" data-aos-duration="3000">Hit me up!</span>
                             <br>
                             <i>Feel free to hit me up at <b style="font-style: normal;" class="copy"
                                     id="copyEmail">mraihannayuna13@gmail.com</b>.</i>
                             <br>
-                            <span class="span-title">Ring me!</span>
+                            <span class="span-title" data-aos="zoom-out" data-aos-duration="3000">Ring me!</span>
                             <br>
-                            <i>Ready to connect? Here's my digits: <span style="font-style: normal;" class="copy"
-                                    id="copyPhone">+6281262753984</span>.</i>
+                            <i>Ready to connect? Here's my digits: <b><span style="font-style: normal;" class="copy"
+                                        id="copyPhone">+6281262753984</span></b>.</i>
+
                         </div>
 
                     </section>
@@ -114,13 +160,14 @@
                         <h1>Behind the Scenes</h1>
                     </section>
 
-                    <section class="about_me">
-                        <h4>
-                            About me? Well, I'm currently a student at IDN Boarding School.<br>
-                            What can I do? I can do both front-end and back-end, although I mainly focus on backend
-                            development.<br>
-                            Experience? I have experience in developing websites, especially in backend development.
-                        </h4>
+                    <section data-aos="fade-left" data-aos-duration="1500" class="about_me">
+                        <h5>
+                            I am a student at IDN Boarding School, majoring in RPL (Rekayasa Perangkat Lunak). I have
+                            experience in both Front-End and Back-End development, with a particular interest in
+                            Back-End development. I have worked on an E-Commerce website project as a Back-End
+                            developer, demonstrating my skills in Laravel, Bootstrap, and MySQL. Additionally, I have
+                            intermediate skills in using design and editing software such as Figma, Canva, and CapCut.
+                            </h4>
                     </section>
 
                     <!--* Contact -->
@@ -129,14 +176,19 @@
                         <h1>Social Media</h1>
                     </section>
 
-                    <section class="contact">
+                    <section data-aos="fade-left" data-aos-duration="1500" class="contact">
                         <a class="logo" href="https://www.instagram.com/raihanidn/"><i
                                 class="fa-brands fa-instagram"></i></a>
-                        <a class="logo" href="https://www.linkedin.com/in/m-raihan-n-914932248/"><i
+                        <a class="logo" href="https://www.linkedin.com/in/nayunadev/"><i
                                 class="fa-brands fa-linkedin"></i></a>
                         <a class="logo" href="https://github.com/mraihannayuna"><i class="fa-brands fa-github"></i></a>
 
                     </section>
+
+
+                    <div data-aos="fade-left" data-aos-duration="1500" class="btn-cv">
+                        <a href="public/CV.pdf" title="Download CV" download>Download CV</a>
+                    </div>
 
                 </main>
             </div>
@@ -148,12 +200,12 @@
         <!--? Sidebar -->
 
         <div class="sustain-items">
-            <sidebar class="side-bg">
+            <sidebar data-aos-duration="1500" data-aos="flip-down" class="side-bg">
 
                 <div class="buttons">
                     <a class="main-prf" href="#">Profile</a>
                     <a class="exp" href="exp.html">Experience</a>
-                    <a class="intr" href="interest.html">Interest</a>
+                    <a class="intr" href="interest.html">More!!!</a>
                 </div>
 
             </sidebar>
